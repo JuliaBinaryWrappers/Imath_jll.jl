@@ -2,12 +2,12 @@
 export libImath
 
 JLLWrappers.@generate_wrapper_header("Imath")
-JLLWrappers.@declare_library_product(libImath, "@rpath/libImath-3_0.27.dylib")
+JLLWrappers.@declare_library_product(libImath, "@rpath/libImath-3_1.29.dylib")
 function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libImath,
-        "lib/libImath-3_0.27.0.0.dylib",
+        "lib/libImath-3_1.29.1.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
